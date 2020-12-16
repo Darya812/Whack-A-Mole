@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack-a-mask!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hello">
+      <div class="img">
+        <img src="saw.jpg" />
+      </div>
+      <div class="set-name">
+        <h2>Enter Name:</h2>
+        <input id="text" type="text" size="15" />
+        <input id="submit" type="submit" value="Submit" />
+      </div>
+    </div>
+    <div class="start">
+      <h1>Whack-a-ghost! <span class="score">0</span></h1>
+      <div class="record">
+        <center><button onClick="startGame()">Start!</button></center>
+      </div>
+
+      <div class="game">
+        <div class="house house1">
+          <div class="ghost"></div>
+        </div>
+        <div class="house house2">
+          <div class="ghost"></div>
+        </div>
+        <div class="house house3">
+          <div class="ghost"></div>
+        </div>
+        <div class="house house4">
+          <div class="ghost"></div>
+        </div>
+        <div class="house house5">
+          <div class="ghost"></div>
+        </div>
+        <div class="house house6">
+          <div class="ghost"></div>
+        </div>
+      </div>
+    </div>
+    <div class="gameOver">
+      <center><p class="go">Game Over</p></center>
+      <div id="table">       
+      </div>
+    </div>
+
+    <script src="action.js"></script>
+  </body>
+</html>
